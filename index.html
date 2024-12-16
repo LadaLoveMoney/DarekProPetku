@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DarekProPetku</title>
+    <script type="text/javascript">
+        function checkPassword() {
+            var password = document.getElementById("password").value;
+            if (password == "vitakuba") {
+                document.getElementById("content").style.display = "block";
+                document.getElementById("passwordForm").style.display = "none";
+            } else {
+                alert("Incorrect password");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="passwordForm">
+        <h2>Enter Password</h2>
+        <input type="password" id="password">
+        <button onclick="checkPassword()">Submit</button>
+    </div>
+    <div id="content" style="display:none;">
+        <h2>Protected Content</h2>
+        <img src="https://scontent.fprg1-1.fna.fbcdn.net/v/t39.30808-6/459391658_941743204637492_7925575122023121291_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=v_FRsSw3kosQ7kNvgF1mpN5&_nc_zt=23&_nc_ht=scontent.fprg1-1.fna&_nc_gid=As-k7SIrUMguI6CjGFeEKSh&oh=00_AYB_8Lzyg7lXPPUhxgMZadyfGHETRAeaOx1mJYSQs3r8kQ&oe=6765349D" alt="Protected Image">
+    </div>
+</body>
+</html>
